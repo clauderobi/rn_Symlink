@@ -29,6 +29,12 @@ type SectionProps = PropsWithChildren<{
   title: string;
 }>;
 
+import { dummy } from './neWeb/hello.js';
+debugger;
+const a = dummy();
+console.log(a);
+debugger;
+
 function Section({children, title}: SectionProps): JSX.Element {
   const isDarkMode = useColorScheme() === 'dark';
   return (
